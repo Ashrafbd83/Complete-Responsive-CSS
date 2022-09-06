@@ -1,0 +1,57 @@
+/* Media Query  */
+
+
+/* for screen sm(640px;) */
+@media(min-width:640px){
+    .sm-text-xl span{
+    font-size:3rem;
+   }
+}
+/* for screen md(768px;) */
+@media(min-width:768px){
+    #nav .toggle-btn button{
+        display:none;
+       }
+       #nav .collapse{
+        max-height:initial !important;
+    }
+    #nav .collapse ul{
+        flex-direction:row !important;
+    }
+    .md-text-left{
+        padding:left !important;
+    }
+}
+/* for screen lg(1024px;) */
+@media(min-width:1024px){
+    #nav .toggle-btn button{
+     display:none;
+    }
+    #nav .collapse{
+        max-height:initial !important;
+    }
+    #nav .collapse ul{
+        flex-direction:row !important;
+    }  
+    .lg-cols-3{
+        grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    }
+    /*=======================Contact Area=================*/
+    .lg-cols-2{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    }
+/*=======================/contact Area=================*/
+    
+}
+/* for screen xl(1280px;) */
+@media(min-width:1280px){
+    #nav .toggle-btn button{
+        display:none;
+       }
+    #nav{
+        background:transparent !important;
+    }
+    #nav .flex-initial ul button{
+        display:inline-block !important;
+    }
+}
