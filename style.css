@@ -320,23 +320,52 @@ ul{
 
 /* life-area */
 .random_picture{
-    width:80%;
+width:80%;
+align-items:center;
+margin:0 auto;
 }
 .random_grid{
 display:flex;
 flex-wrap:wrap;
-columns:repeat(4,1fr);
-justify-content: space-between;
+columns:repeat(auto-fit minmax(20px,1fr));
+justify-content:space-around;
 align-items:center;
 width:100%;
 }
 .test22{
-    max-width:200px;
-    height:200px;
-    background:#dd2476;
-    margin:10px;
+max-width:200px;
+height:200px;
+background:#dd2476;
+margin:10px;
 
 }
 .random_grid .col1{
    
    }
+
+/* image Gallary */
+
+.picture_gallary{
+    width:100%;
+    border:2px solid red;
+    margin:0 auto;
+    display:flex;
+}
+.responsive_picture{
+    display:flex;
+    max-width:100%;
+    border:2px solid green;
+    gap:20px;
+   justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    box-sizing:border-box;
+}
+.responsive_picture img{ 
+ max-width:200px;;
+ height:auto;
+ border:1px solid blue;
+ border-radius:10px;
+
+
+}
