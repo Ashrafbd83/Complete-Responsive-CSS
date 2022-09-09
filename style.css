@@ -356,16 +356,38 @@ margin:10px;
     max-width:100%;
     border:2px solid green;
     gap:20px;
-   justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    box-sizing:border-box;
 }
-.responsive_picture img{ 
- max-width:200px;;
+.responsive_picture div{
+    display:flex;
+    align-items:stretch;
+    border:1px solid blue;
+    border-radius:10px;
+}
+.responsive_picture div img{ 
+ max-width:200px;
+ width:100%;
  height:auto;
- border:1px solid blue;
- border-radius:10px;
+ height:auto;
+ object-fit:cover;
+ object-position:center;
+}
+/* Grid picture gallary */
 
+.grid_picture{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 
+}
+.grid_picture img{
+display:inline-block;
+align-items:stretch;
+justify-content:stretch;
+max-width:100%;
+grid-auto-rows:200px;
+grid-auto-flow:dense;
+border-radius:10px;
+border:5px solid red;
 }
